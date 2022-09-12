@@ -1,0 +1,37 @@
+a {
+	color: #D1462F;
+}
+
+.title,
+h2 {
+	color: #896332;
+}
+
+h1~p {
+	color: #E3C567;
+}
+
+#vscode,
+#notepad,
+#brackets,
+#atom,
+#stext {
+	color: #D1462F;
+}
+
+.text {
+	color: #896332;
+}
+
+.items .item,
+b {
+	color: #E3C567;
+}
+
+li {
+	color: #C8963E;
+}
+
+.text-desc {
+	color: #896332;
+}
