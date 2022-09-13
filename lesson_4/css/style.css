@@ -1,0 +1,90 @@
+/* Підключення шрифтів */
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Regular.woff2) format("woff2"), url(../fonts/Lato-Regular.woff) format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Bold.woff2) format("woff2"), url(../fonts/Lato-Bold.woff) format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Black.woff2) format("woff2"), url(../fonts/Lato-Black.woff) format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* ------------------- */
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.header-list,
+.footer-list {
+	font-family: 'Combo', cursive;
+	font-size: 28px;
+}
+
+a {
+	color: #D1462F;
+}
+
+.title,
+h2 {
+	font-size: 36px;
+	font-weight: 900;
+	color: #896332;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+h1~p {
+	color: #E3C567;
+}
+
+#vscode,
+#notepad,
+#brackets,
+#atom,
+#stext {
+	font-family: 'Combo', cursive;
+	font-size: 38px;
+	color: #D1462F;
+}
+
+.text {
+	color: #896332;
+}
+
+.item,
+b {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.items .item,
+b {
+	color: #E3C567;
+}
+
+li {
+	color: #C8963E;
+}
+
+.text-desc {
+	color: #896332;
+}
