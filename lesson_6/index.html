@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 6</title>
+</head>
+
+<body>
+	<header id="header" class="header">
+		<p>lesson 6</p>
+	</header>
+	<main>
+		<div class="section-one">
+			<div class="content-one">
+				<h1 class="title">HR statistics: job search, interviews, hiring and recruiting</h1>
+				<img src="img/image.jpeg" alt="Picture">
+				<p class="big-text indent">Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui
+					odio. Interdum aenean sit malesuadaornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est
+					hendrerit ac euismod.</p>
+				<ul class="list">
+					<li class="text-indent">At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et
+						sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate
+						metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam
+						nisl lacinia amet, odio. Mi varius viverra risus vel.</li>
+					<li>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus
+						libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed.
+						Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi
+						sed. Ut aliquet velit pharetra, nisi nunc, non.</li>
+				</ul>
+				<p class="big-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra
+					mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis
+					quis non. Congue tortor in tot euismod vulputate etiam eros. Vel accumsan at elit neque, ipsum.</p>
+				<p>Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in
+					neque amet non fringilla blandit:</p>
+				<ul class="items">
+					<li class="item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+					<li class="item">Vulputate placerat amet pulvinar lorem nisl.</li>
+					<li class="item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+					<li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+				</ul>
+				<p>Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus
+					eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque
+					ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo,
+					pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis
+					sagittis curabitur tellus convallis eget netus vitae.</p>
+			</div>
+		</div>
+		<div class="section-two">
+			<div class="content-two">
+				<h2>Ember QuickTips: How to breakup and import SASS/CSS files separately</h2>
+				<a href="https://www.freecodecamp.org/news/ember-quicktips-how-to-breakup-and-import-sass-css-files-separately-b0759459027d/"
+					target="_blank"><img class="image" src="img/sass.png" alt="Sass"></a>
+				<div class="text-narrow">
+					<p class="subtitle">There are times when it’s desirable to <span>break up your stylesheets into multiple
+							files and import them into your project separately.</span> This came up in a side project I started
+						recently, and I thought y’all might benefit from what I came up with as a solution. It’s a quick and
+						easy method, so let’s get started?</p>
+					<p>When you begin a new EmberJS app you’ll notice that the <code>index.html</code> file imports the main
+						stylesheet into the app like so:</p>
+					<img src="img/01.png" alt="Code image">
+					<p><code>test-app.css</code> is compiled directly from your project. When we write our custom styles in
+						<code>app/styles/app.css</code> they get put into this file.
+					</p>
+					<p>Now, what if we don’t want to import all of our styles into the app as a single stylesheet? <span>How
+							can we breakup our styles and import multiple stylesheets into the app?</span> Something like this:
+					</p>
+					<img src="img/02.png" alt="Code image">
+					<p>It may be easier than you think ?</p>
+					<h3>Step One: Write styles in SCSS/SASS and compile to CSS</h3>
+					<p>First, install a SASS preprocessor to compile SCSS/SASS stylesheets into CSS stylesheets. For this
+						example I’ll use <code>ember-cli-sass</code>:</p>
+					<img src="img/03.png" alt="Code image">
+					<p>Now rename <code>app/styles/app.css</code> to <code>app/styles/app.scss</code>. The preprocessor will
+						take care of processing and compiling your stylesheet automatically.</p>
+					<p>If you run the app the Ember welcome page should display as usual:</p>
+					<img src="img/04.png" alt="Code image">
+					<p class="desc-img">Nothing has changed. That’s good.</p>
+					<p>Comment out <code>{{welcome-page}}</code> in <code>app/templates/application.hbs</code> before you
+						continue. We now have a blank DOM to work with.</p>
+					<h3>Step Two: Create a new stylesheet</h3>
+					<p>Let’s create a new stylesheet called <code>app/styles/second-stylesheet.scss</code> and add the
+						following styles:</p>
+					<img src="img/05.png" alt="Code image">
+					<p>A glaring red background would be very obvious, yet when you run the server you see nothing but a sea
+						of white. Why is this?</p>
+					<p>If your instinct was to import it into the project as specified above, you would be correct:</p>
+					<img src="img/06.png" alt="Code image">
+					<p>Yet, it still doesn’t show up. Why? ? That’s because the build pipeline hasn’t been configured to
+						build this file in the correct folder just yet.</p>
+					<h3>Step Three: Configure Ember-CLI-Build</h3>
+					<p>The final step is to tell the Ember app that you have a <code>css</code> file to include in its build
+						pipeline.</p>
+					<p>In <code>ember-cli-build.js</code> add the following:</p>
+					<img src="img/07.png" alt="Code image">
+					<p><span>That’s it!</span> ? This tells Ember where to output your new stylesheet so that it can be
+						properly accessed in your <code>index.html</code> ?</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<a href="#header">Up &#9757;</a>
+	</footer>
+</body>
+
+</html>
