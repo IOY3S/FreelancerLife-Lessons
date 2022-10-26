@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 13</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+		</header>
+		<main>
+
+			<!-- transition -->
+			<div class="transition__container">
+				<h2 class="transition__title title">transition</h2>
+				<p class="transition__text text">CSS-переходи дозволяють анімувати зміну значення властивості з
+					плином часу, керуючи швидкістю цього переходу. Зміна властивостей відбувається
+					під час настання певної події.</p>
+			</div>
+
+			<!-- transition-duration -->
+			<div class="transition-duration__container">
+				<h3 class="transition-duration__subtitle subtitle">Властивість transition-duration</h3>
+				<p class="transition-duration__desc text">Задає проміжок часу, протягом якого повинен відбутися перехід.</p>
+				<p class="transition-duration__slogan slogan">Перехід спрацьовує при наведенні курсору на контейнер</p>
+				<div class="transition-duration__list transition-duration-list">
+					<div class="transition-duration-list__item transition-duration-list__item--red">500ms</div>
+					<div class="transition-duration-list__item transition-duration-list__item--violet">1500ms</div>
+					<div class="transition-duration-list__item transition-duration-list__item--green">3000ms</div>
+				</div>
+			</div>
+
+			<!-- transition-timing-function -->
+			<div class="transition-timing-function__container">
+				<h3 class="transition-timing-function__subtitle subtitle">Властивість transition-timing-function</h3>
+				<p class="transition-timing-function__desc text">Задає <a href="https://cubic-bezier.com/#.17,.67,.83,.67"
+						target="_blank">функцію розподілу часу</a>, яка описує
+					швидкість переходу властивості від одного значення до іншого.</p>
+				<p class="transition-timing-function__slogan slogan">Перехід спрацьовує при наведенні
+					курсору на контейнер</p>
+				<div class="transition-timing-function__list transition-timing-function-list">
+					<div class="transition-timing-function-list__item transition-timing-function-list__item--yellow"></div>
+					<div class="transition-timing-function-list__item transition-timing-function-list__item--red"></div>
+					<div class="transition-timing-function-list__item transition-timing-function-list__item--violet"></div>
+					<div class="transition-timing-function-list__item transition-timing-function-list__item--green"></div>
+					<div class="transition-timing-function-list__item transition-timing-function-list__item--red-1"></div>
+					<div class="transition-timing-function-list__item transition-timing-function-list__item--yellow-1"></div>
+				</div>
+			</div>
+
+			<!-- transition-delay -->
+			<div class="transition-delay__container">
+				<h3 class="transition-delay__subtitle subtitle">Властивість transition-delay</h3>
+				<p class="transition-delay__desc text">Затримка, після якої почнеться анімація переходу.</p>
+				<p class="transition-delay__slogan slogan">Наведіть курсор миші на квадрат, і перехід почнеться після цієї
+					події</p>
+				<div class="transition-delay__list transition-delay-list">
+					<div class="transition-delay-list__item transition-delay__item--red">500ms</div>
+					<div class="transition-delay-list__item transition-delay__item--violet">1500ms</div>
+					<div class="transition-delay-list__item transition-delay__item--green">2000ms</div>
+				</div>
+			</div>
+
+			<!-- animation -->
+			<div class="animation__container">
+				<h2 class="animation__title title">animation</h2>
+				<p class="animation__text text">Як і переходи, анімація надає веб-сторінкам динамічність, але, на відміну
+					від переходів, анімації не потрібен обов'язковий ініціатор (подія), її можна повторити нескінченну
+					кількість разів, і між початковим і кінцевим станами може
+					бути будь-яка кількість проміжних станів.</p>
+			</div>
+
+			<!-- animation-duration -->
+			<div class="animation-duration__container">
+				<h3 class="animation-duration__subtitle subtitle">Властивість animation-duration</h3>
+				<p class="animation-duration__desc text">Встановлює тривалість анімації - час, за який будуть пройдені всі
+					кадри.</p>
+				<p class="animation-duration__slogan slogan">Анімація запускається при наведенні на елемент</p>
+				<div class="animation-duration__list">
+					<div class="animation-duration__item"></div>
+				</div>
+			</div>
+
+			<!-- animation-timing-function -->
+			<div class="animation-timing-function__container">
+				<h3 class="animation-timing-function__subtitle subtitle">Властивість animation-timing-function</h3>
+				<p class="animation-timing-function__desc text">Встановлює <a
+						href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">функцію розподілу
+						часу</a> для анімації.</p>
+				<p class="animation-timing-function__slogan slogan">Анімація запускається при наведенні на елемент</p>
+				<div class="animation-timing-function__list">
+					<div class="animation-timing-function__item"></div>
+				</div>
+			</div>
+
+			<!-- animation-delay -->
+			<div class="animation-delay__container">
+				<h3 class="animation-delay__subtitle subtitle">Властивість animation-delay</h3>
+				<p class="animation-delay__desc text">Встановлює затримку перед початком анімації в секундах або
+					мілісекундах.</p>
+				<p class="animation-delay__slogan slogan">Наведіть курсор миші на елемент, і перехід почнеться через 2000ms
+				</p>
+				<div class="animation-delay__list">
+					<div class="animation-delay__item"></div>
+				</div>
+			</div>
+
+			<!-- animation-iteration-count -->
+			<div class="animation-iteration-count__container">
+				<h3 class="animation-iteration-count__subtitle subtitle">Властивість animation-iteration-count</h3>
+				<p class="animation-iteration-count__desc text">Встановлює кількість повних повторень анімації.</p>
+				<p class="animation-iteration-count__slogan slogan">Значення може бути цілим додатним числом або ключовим
+					словом <br> <span>infinite</span> - це зробить анімацію нескінченною.</p>
+				<div class="animation-iteration-count__list">
+					<div class="animation-iteration-count__item">
+						<img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt=Sun width="300" height="300">
+					</div>
+				</div>
+			</div>
+
+			<!-- animation-direction -->
+			<div class="animation-direction__container">
+				<h3 class="animation-direction__subtitle subtitle">Властивість animation-direction</h3>
+				<p class="animation-direction__desc text">Контролює напрямок відтворення анімації - від початкового до
+					кінцевого кадру, навпаки від кінцевого кадру до
+					початкового, або, можливо необхідно, щоб порядок чергувався на кожному повторенні.</p>
+				<div class="animation-direction__list animation-direction-list">
+					<div class="animation-direction-list__item animation-direction-list__item--yellow">normal</div>
+					<div class="animation-direction-list__item animation-direction-list__item--red">reverse</div>
+					<div class="animation-direction-list__item animation-direction-list__item--violet">alternate</div>
+					<div class="animation-direction-list__item animation-direction-list__item--green">alternate-reverse</div>
+				</div>
+			</div>
+
+			<!-- animation-fill-mode -->
+			<div class="animation-fill-mode__container">
+				<h3 class="animation-fill-mode__subtitle subtitle">Властивість animation-fill-mode</h3>
+				<p class="animation-fill-mode__desc text">Визначає, що відбувається зі стилями елемента до початку анімації
+					і після її завершення.</p>
+				<p class="animation-fill-mode__slogan slogan">Для повтору анімації необхідно перезавантажити сторінку</p>
+				<div class="animation-fill-mode__list animation-fill-mode-list">
+					<div class="animation-fill-mode-list__item animation-fill-mode-list__item--yellow">none</div>
+					<div class="animation-fill-mode-list__item animation-fill-mode-list__item--red">forwards</div>
+					<div class="animation-fill-mode-list__item animation-fill-mode-list__item--violet">backwards</div>
+					<div class="animation-fill-mode-list__item animation-fill-mode-list__item--green">both</div>
+				</div>
+			</div>
+
+			<!-- animation-play-state -->
+			<div class="animation-play-state__container">
+				<h3 class="animation-play-state__subtitle subtitle">Властивість animation-play-state</h3>
+				<p class="animation-play-state__desc text">Дозволяє призупинити відтворення анімації.</p>
+				<p class="animation-play-state__slogan slogan">Анімація припиняється при наведенні на елемент</p>
+				<div class="animation-play-state__list">
+					<div class="animation-play-state__item"></div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+		</footer>
+	</div>
+</body>
+
+</html>
