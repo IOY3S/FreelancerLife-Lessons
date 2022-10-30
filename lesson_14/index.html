@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header id="header" class="header">
+			<p>lesson 14</p>
+		</header>
+		<main>
+			<!-- flexbox / Властивості контейнера -->
+			<div class="flexbox-container__container">
+				<h2 class="flexbox-container__title title"><span>flexbox /</span> властивості контейнера:</h2>
+				<p class="flexbox-container__text text"><span>Flex-контейнер</span> - це батько групи елементів, яким
+					необхідно змінити порядок розташування. Саме властивості контейнера контролюють напрямок осей,
+					багаторядковість і позиціонування елементів в рядку.</p>
+			</div>
+
+			<!-- Властивість display -->
+			<div class="display__container">
+				<h3 class="display__subtitle subtitle">Властивість <span>display:</span></h3>
+				<p class="display__text text">Створює flex-контейнер, блоковий або рядково-блоковий, залежно від
+					заданого значення, і встановлює flex-контекст для всіх дітей контейнера, перетворюючи їх у
+					flex-елементи.</p>
+
+				<p class="display__name-power text"><span>display:</span> flex;</p>
+				<div class="display__list display__list--flex">
+					<div class="display__item display__item--yellow">1</div>
+					<div class="display__item display__item--red">2</div>
+					<div class="display__item display__item--violet">3</div>
+					<div class="display__item display__item--green">4</div>
+				</div>
+
+				<p class="display__name-power text"><span>display:</span> inline-flex;</p>
+				<div class="display__list display__list--inline-flex">
+					<div class="display__item display__item--yellow">1</div>
+					<div class="display__item display__item--red">2</div>
+					<div class="display__item display__item--violet">3</div>
+					<div class="display__item display__item--green">4</div>
+				</div>
+			</div>
+
+			<!-- Властивість flex-wrap -->
+			<div class="flex-wrap__container">
+				<h3 class="flex-wrap__subtitle subtitle">Властивість <span>flex-wrap:</span></h3>
+				<p class="flex-wrap__text text">Властивість дозволяє перетворити однорядковий контейнер у багаторядковий.
+					Елементи будуть додаватися в рядок
+					доти, доки в ньому буде місце, після чого буде автоматично створений ще один рядок.</p>
+
+				<p class="flex-wrap__name-power text"><span>flex-wrap:</span> nowrap; ( <span>за
+						замовчуванням</span> )</p>
+				<div class="flex-wrap__list flex-wrap__list--nowrap">
+					<div class="flex-wrap__item flex-wrap__item--yellow">1</div>
+					<div class="flex-wrap__item flex-wrap__item--red">2</div>
+					<div class="flex-wrap__item flex-wrap__item--violet">3</div>
+					<div class="flex-wrap__item flex-wrap__item--green">4</div>
+				</div>
+
+				<p class="flex-wrap__name-power text"><span>flex-wrap:</span> wrap;</p>
+				<div class="flex-wrap__list flex-wrap__list--wrap">
+					<div class="flex-wrap__item flex-wrap__item--yellow">1</div>
+					<div class="flex-wrap__item flex-wrap__item--red">2</div>
+					<div class="flex-wrap__item flex-wrap__item--violet">3</div>
+					<div class="flex-wrap__item flex-wrap__item--green">4</div>
+				</div>
+			</div>
+
+			<!-- Властивість justify-content -->
+			<div class="justify-content__container">
+				<h3 class="justify-content__subtitle subtitle">Властивість <span>justify-content:</span></h3>
+				<p class="justify-content__text text">Управляє позиціонуванням елементів на головній осі.</p>
+
+				<p class="justify-content__name-power text"><span>justify-content:</span> flex-start; ( <span>за
+						замовчуванням</span> )</p>
+				<div class="justify-content__list justify-content__list--flex-start">
+					<div class="justify-content__item justify-content__item--yellow">1</div>
+					<div class="justify-content__item justify-content__item--red">2</div>
+					<div class="justify-content__item justify-content__item--violet">3</div>
+					<div class="justify-content__item justify-content__item--green">4</div>
+				</div>
+
+				<p class="justify-content__name-power text"><span>justify-content:</span> flex-end;</p>
+				<div class="justify-content__list justify-content__list--flex-end">
+					<div class="justify-content__item justify-content__item--yellow">1</div>
+					<div class="justify-content__item justify-content__item--red">2</div>
+					<div class="justify-content__item justify-content__item--violet">3</div>
+					<div class="justify-content__item justify-content__item--green">4</div>
+				</div>
+
+				<p class="justify-content__name-power text"><span>justify-content:</span> center;</p>
+				<div class="justify-content__list justify-content__list--center">
+					<div class="justify-content__item justify-content__item--yellow">1</div>
+					<div class="justify-content__item justify-content__item--red">2</div>
+					<div class="justify-content__item justify-content__item--violet">3</div>
+					<div class="justify-content__item justify-content__item--green">4</div>
+				</div>
+
+				<p class="justify-content__name-power text"><span>justify-content:</span> space-between;</p>
+				<div class="justify-content__list justify-content__list--space-between">
+					<div class="justify-content__item justify-content__item--yellow">1</div>
+					<div class="justify-content__item justify-content__item--red">2</div>
+					<div class="justify-content__item justify-content__item--violet">3</div>
+					<div class="justify-content__item justify-content__item--green">4</div>
+				</div>
+
+				<p class="justify-content__name-power text"><span>justify-content:</span> space-around;</p>
+				<div class="justify-content__list justify-content__list--space-around">
+					<div class="justify-content__item justify-content__item--yellow">1</div>
+					<div class="justify-content__item justify-content__item--red">2</div>
+					<div class="justify-content__item justify-content__item--violet">3</div>
+					<div class="justify-content__item justify-content__item--green">4</div>
+				</div>
+
+				<p class="justify-content__name-power text"><span>justify-content:</span> space-evenly;</p>
+				<div class="justify-content__list justify-content__list--space-evenly">
+					<div class="justify-content__item justify-content__item--yellow">1</div>
+					<div class="justify-content__item justify-content__item--red">2</div>
+					<div class="justify-content__item justify-content__item--violet">3</div>
+					<div class="justify-content__item justify-content__item--green">4</div>
+				</div>
+			</div>
+
+			<!-- Властивість align-items -->
+			<div class="align-items__container">
+				<h3 class="align-items__subtitle subtitle">Властивість <span>align-items:</span></h3>
+				<p class="align-items__text text">Управляє розташуванням елементів вздовж поперечної осі.</p>
+
+				<p class="align-items__name-power text"><span>align-items:</span> stretch; ( <span>за
+						замовчуванням</span> )</p>
+				<div class="align-items__list align-items__list--stretch">
+					<div class="align-items__item align-items__item--yellow">1</div>
+					<div class="align-items__item align-items__item--red">2</div>
+					<div class="align-items__item align-items__item--violet">3</div>
+					<div class="align-items__item align-items__item--green">4</div>
+				</div>
+
+				<p class="align-items__name-power text"><span>align-items:</span> flex-start;</p>
+				<div class="align-items__list align-items__list--flex-start">
+					<div class="align-items__item align-items__item--yellow">1</div>
+					<div class="align-items__item align-items__item--red">2</div>
+					<div class="align-items__item align-items__item--violet">3</div>
+					<div class="align-items__item align-items__item--green">4</div>
+				</div>
+
+				<p class="align-items__name-power text"><span>align-items:</span> flex-end;</p>
+				<div class="align-items__list align-items__list--flex-end">
+					<div class="align-items__item align-items__item--yellow">1</div>
+					<div class="align-items__item align-items__item--red">2</div>
+					<div class="align-items__item align-items__item--violet">3</div>
+					<div class="align-items__item align-items__item--green">4</div>
+				</div>
+
+				<p class="align-items__name-power text"><span>align-items:</span> center;</p>
+				<div class="align-items__list align-items__list--center">
+					<div class="align-items__item align-items__item--yellow">1</div>
+					<div class="align-items__item align-items__item--red">2</div>
+					<div class="align-items__item align-items__item--violet">3</div>
+					<div class="align-items__item align-items__item--green">4</div>
+				</div>
+
+				<p class="align-items__name-power text">align-items: center; <span>+</span> justify-content:
+					center;</p>
+				<div class="align-items__list align-items__list--center-accent">
+					<div class="align-items__item align-items__item--yellow">1</div>
+					<div class="align-items__item align-items__item--red">2</div>
+					<div class="align-items__item align-items__item--violet">3</div>
+					<div class="align-items__item align-items__item--green">4</div>
+				</div>
+
+				<p class="align-items__name-power text"><span>align-items:</span> center;</p>
+				<div class="align-items__list align-items__list--center">
+					<div class="align-items__item align-items__item--yellow">1</div>
+					<div class="align-items__item align-items__item--red">2</div>
+					<div class="align-items__item align-items__item--violet">3</div>
+					<div class="align-items__item align-items__item--green">4</div>
+				</div>
+
+				<p class="align-items__name-power text"><span>align-items:</span> baseline;</p>
+				<div class="align-items__list align-items__list--baseline">
+					<div class="align-items__item align-items__item--yellow-baseline">1</div>
+					<div class="align-items__item align-items__item--red-baseline">2</div>
+					<div class="align-items__item align-items__item--violet-baseline">3</div>
+					<div class="align-items__item align-items__item--green-baseline">4</div>
+				</div>
+			</div>
+
+			<!-- Властивість flex-direction -->
+			<div class="flex-direction__container">
+				<h3 class="flex-direction__subtitle subtitle">Властивість <span>flex-direction:</span></h3>
+				<p class="flex-direction__text text">Властивість flex-direction встановлює напрямок головної осі,
+					визначаючи напрямок елементів в контейнері.</p>
+
+				<p class="flex-direction__name-power text"><span>flex-direction:</span> row; ( <span>за
+						замовчуванням</span> )</p>
+				<div class="flex-direction__list flex-direction__list--row">
+					<div class="flex-direction__item flex-direction__item--yellow">1</div>
+					<div class="flex-direction__item flex-direction__item--red">2</div>
+					<div class="flex-direction__item flex-direction__item--violet">3</div>
+					<div class="flex-direction__item flex-direction__item--green">4</div>
+				</div>
+
+				<p class="flex-direction__name-power text"><span>flex-direction:</span> row-reverse;</p>
+				<div class="flex-direction__list flex-direction__list--row-reverse">
+					<div class="flex-direction__item flex-direction__item--yellow">1</div>
+					<div class="flex-direction__item flex-direction__item--red">2</div>
+					<div class="flex-direction__item flex-direction__item--violet">3</div>
+					<div class="flex-direction__item flex-direction__item--green">4</div>
+				</div>
+
+				<p class="flex-direction__name-power text"><span>flex-direction:</span> column;</p>
+				<div class="flex-direction__list flex-direction__list--column">
+					<div class="flex-direction__item flex-direction__item--yellow">1</div>
+					<div class="flex-direction__item flex-direction__item--red">2</div>
+					<div class="flex-direction__item flex-direction__item--violet">3</div>
+					<div class="flex-direction__item flex-direction__item--green">4</div>
+				</div>
+
+				<p class="flex-direction__name-power text"><span>flex-direction:</span> column-reverse;</p>
+				<div class="flex-direction__list flex-direction__list--column-reverse">
+					<div class="flex-direction__item flex-direction__item--yellow">1</div>
+					<div class="flex-direction__item flex-direction__item--red">2</div>
+					<div class="flex-direction__item flex-direction__item--violet">3</div>
+					<div class="flex-direction__item flex-direction__item--green">4</div>
+				</div>
+			</div>
+
+			<!-- Властивість align-content -->
+			<div class="align-content__container">
+				<h3 class="align-content__subtitle subtitle">Властивість <span>align-content:</span></h3>
+				<p class="align-content__text text">Управляє вирівнюванням всіх рядків багаторядкового контейнера вздовж
+					поперечної осі, якщо є вільне місце.</p>
+
+				<p class="align-content__name-power text"><span>align-content:</span> stretch; ( <span>за
+						замовчуванням</span> )</p>
+				<div class="align-content__list align-content__list--stretch">
+					<div class="align-content__item align-content__item--yellow">1</div>
+					<div class="align-content__item align-content__item--red">2</div>
+					<div class="align-content__item align-content__item--violet">3</div>
+					<div class="align-content__item align-content__item--green">4</div>
+				</div>
+
+				<p class="align-content__name-power text"><span>align-content:</span> flex-start;</p>
+				<div class="align-content__list align-content__list--flex-start">
+					<div class="align-content__item align-content__item--yellow">1</div>
+					<div class="align-content__item align-content__item--red">2</div>
+					<div class="align-content__item align-content__item--violet">3</div>
+					<div class="align-content__item align-content__item--green">4</div>
+				</div>
+
+				<p class="align-content__name-power text"><span>align-content:</span> flex-end;</p>
+				<div class="align-content__list align-content__list--flex-end">
+					<div class="align-content__item align-content__item--yellow">1</div>
+					<div class="align-content__item align-content__item--red">2</div>
+					<div class="align-content__item align-content__item--violet">3</div>
+					<div class="align-content__item align-content__item--green">4</div>
+				</div>
+
+				<p class="align-content__name-power text"><span>align-content:</span> center;</p>
+				<div class="align-content__list align-content__list--center">
+					<div class="align-content__item align-content__item--yellow">1</div>
+					<div class="align-content__item align-content__item--red">2</div>
+					<div class="align-content__item align-content__item--violet">3</div>
+					<div class="align-content__item align-content__item--green">4</div>
+				</div>
+
+				<p class="align-content__name-power text"><span>align-content:</span> space-between;</p>
+				<div class="align-content__list align-content__list--space-between">
+					<div class="align-content__item align-content__item--yellow">1</div>
+					<div class="align-content__item align-content__item--red">2</div>
+					<div class="align-content__item align-content__item--violet">3</div>
+					<div class="align-content__item align-content__item--green">4</div>
+					<div class="align-content__item align-content__item--yellow">5</div>
+					<div class="align-content__item align-content__item--red">6</div>
+					<div class="align-content__item align-content__item--violet">7</div>
+					<div class="align-content__item align-content__item--green">8</div>
+				</div>
+
+				<p class="align-content__name-power text"><span>align-content:</span> space-around;</p>
+				<div class="align-content__list align-content__list--space-around">
+					<div class="align-content__item align-content__item--yellow">1</div>
+					<div class="align-content__item align-content__item--red">2</div>
+					<div class="align-content__item align-content__item--violet">3</div>
+					<div class="align-content__item align-content__item--green">4</div>
+					<div class="align-content__item align-content__item--yellow">5</div>
+					<div class="align-content__item align-content__item--red">6</div>
+					<div class="align-content__item align-content__item--violet">7</div>
+					<div class="align-content__item align-content__item--green">8</div>
+				</div>
+
+				<p class="align-content__name-power text"><span>align-content:</span> space-evenly;</p>
+				<div class="align-content__list align-content__list--space-evenly">
+					<div class="align-content__item align-content__item--yellow">1</div>
+					<div class="align-content__item align-content__item--red">2</div>
+					<div class="align-content__item align-content__item--violet">3</div>
+					<div class="align-content__item align-content__item--green">4</div>
+					<div class="align-content__item align-content__item--yellow">5</div>
+					<div class="align-content__item align-content__item--red">6</div>
+					<div class="align-content__item align-content__item--violet">7</div>
+					<div class="align-content__item align-content__item--green">8</div>
+				</div>
+
+			</div>
+
+			<!-- flexbox / Властивості елемента -->
+			<div class="flexbox-element__container">
+				<h2 class="flexbox-element__title title"><span>flexbox /</span> властивості елемента:</h2>
+				<p class="flexbox-element__text text"><span>Flex-елементи</span> - це діти flex-контейнера, елементи
+					першого рівня вкладеності. Flex-елементи перестають підкорятися стандартному потоку документа,
+					втрачають свій тип (блоковий, рядковий тощо) і дотримуються правил позиціонування
+					Flexbox-моделі.</p>
+			</div>
+
+			<!-- Властивість align-self -->
+			<div class="align-self__container">
+				<h3 class="align-self__subtitle subtitle">Властивість <span>align-self:</span></h3>
+				<p class="align-self__text text">Дозволяє елементу змінити своє положення на поперечній осі, перевизначивши
+					для себе значення властивості align-items від
+					контейнера.</p>
+
+				<p class="align-self__name-power text"><span>align-self:</span> auto; ( <span>за
+						замовчуванням</span> )</p>
+				<div class="align-self__list align-self__list--auto">
+					<div class="align-self__item align-self__item--yellow">1</div>
+					<div class="align-self__item align-self__item--red">2</div>
+					<div class="align-self__item align-self__item--violet">3</div>
+					<div class="align-self__item align-self__item--green">4</div>
+				</div>
+
+				<p class="align-self__name-power text"><span>align-self:</span> flex-start;</p>
+				<div class="align-self__list align-self__list--flex-start">
+					<div class="align-self__item align-self__item--yellow">1</div>
+					<div class="align-self__item align-self__item--red">2</div>
+					<div class="align-self__item align-self__item--violet">3</div>
+					<div class="align-self__item align-self__item--green">4</div>
+				</div>
+
+				<p class="align-self__name-power text"><span>align-self:</span> flex-end;</p>
+				<div class="align-self__list align-self__list--flex-end">
+					<div class="align-self__item align-self__item--yellow">1</div>
+					<div class="align-self__item align-self__item--red">2</div>
+					<div class="align-self__item align-self__item--violet">3</div>
+					<div class="align-self__item align-self__item--green">4</div>
+				</div>
+
+				<p class="align-self__name-power text"><span>align-self:</span> center;</p>
+				<div class="align-self__list align-self__list--center">
+					<div class="align-self__item align-self__item--yellow">1</div>
+					<div class="align-self__item align-self__item--red">2</div>
+					<div class="align-self__item align-self__item--violet">3</div>
+					<div class="align-self__item align-self__item--green">4</div>
+				</div>
+
+				<p class="align-self__name-power text"><span>align-self:</span> baseline;</p>
+				<div class="align-self__list align-self__list--baseline">
+					<div class="align-self__item align-self__item--yellow">1</div>
+					<div class="align-self__item align-self__item--red">2</div>
+					<div class="align-self__item align-self__item--violet">3</div>
+					<div class="align-self__item align-self__item--green">4</div>
+				</div>
+
+				<p class="align-self__name-power text"><span>align-self:</span> stretch;</p>
+				<div class="align-self__list align-self__list--stretch">
+					<div class="align-self__item align-self__item--yellow">1</div>
+					<div class="align-self__item align-self__item--red">2</div>
+					<div class="align-self__item align-self__item--violet">3</div>
+					<div class="align-self__item align-self__item--green">4</div>
+				</div>
+			</div>
+
+			<!-- Властивість flex -->
+			<div class="flex__container">
+				<h3 class="flex__subtitle subtitle">Властивість <span>flex:</span></h3>
+				<p class="flex__flex-grow-text text"><span>flex-grow</span> : 0; ( <span>за
+						замовчуванням</span> ) - визначає здатність елемента, у разі потреби,
+					займати більше місця (рости), ніж його початковий розмір. Значення
+					задається як пропорція (частка) вільного місця в контейнері.</p>
+				<p class="flex__flex-shrink-text text"><span>flex-shrink</span> : 1; ( <span>за
+						замовчуванням</span> ) - визначає здатність елемента, у разі потреби,
+					займати менше місця (стискатися), ніж його початковий розмір. Значення задається як пропорція
+					(частка).</p>
+				<p class="flex__flex-basis-text text"><span>flex-basis</span> : auto; ( <span>за
+						замовчуванням</span> ) - визначає початковий розмір елемента перед розподілом
+					вільного простору. Значенням може бути будь-яка валідна величина: пікселі, відсотки, rem тощо.</p>
+
+				<p class="flex__name-power text"><span>flex:</span> 1 0 auto; (<span>за
+						замовчуванням</span>)</p>
+				<div class="flex__list flex__list--auto">
+					<div class="flex__item flex__item--yellow">1</div>
+					<div class="flex__item flex__item--red">2</div>
+					<div class="flex__item flex__item--violet">3</div>
+					<div class="flex__item flex__item--green">4</div>
+				</div>
+
+				<p class="flex__name-power text"><span>flex:</span> 0 1 25%;</p>
+				<div class="flex__list flex__list--percent">
+					<div class="flex__item flex__item--yellow">1</div>
+					<div class="flex__item flex__item--red">2</div>
+					<div class="flex__item flex__item--violet">3</div>
+					<div class="flex__item flex__item--green">4</div>
+				</div>
+
+				<p class="flex__name-power text"><span>flex:</span> 0 1 220px;</p>
+				<div class="flex__list flex__list--px">
+					<div class="flex__item flex__item--yellow">1</div>
+					<div class="flex__item flex__item--red">2</div>
+					<div class="flex__item flex__item--violet">3</div>
+					<div class="flex__item flex__item--green">4</div>
+				</div>
+			</div>
+
+			<!-- Властивість order -->
+			<div class="order__container">
+				<h3 class="order__subtitle subtitle">Властивість <span>order:</span></h3>
+				<p class="order__text text">За замовчуванням елементи розташовуються у тому порядку, в якому вони вказані в
+					HTML-файлі. Використовуючи властивість
+					order можна візуально змінити порядок розташування елементів вздовж головної осі. При цьому, в HTML-коді
+					нічого не зміниться.</p>
+
+				<p class="order__name-power text"><span>order:</span> 0; ( <span>за
+						замовчуванням</span> )</p>
+				<div class="order__list order__list--auto">
+					<div class="order__item order__item--yellow">1</div>
+					<div class="order__item order__item--red">2</div>
+					<div class="order__item order__item--violet">3</div>
+					<div class="order__item order__item--green">4</div>
+				</div>
+
+				<p class="order__name-power text"><span>order:</span> позиція;</p>
+				<div class="order__list order__list--position">
+					<div class="order__item order__item--yellow">1</div>
+					<div class="order__item order__item--red">2</div>
+					<div class="order__item order__item--violet">3</div>
+					<div class="order__item order__item--green">4</div>
+				</div>
+			</div>
+
+			<!-- Фишка/chip -->
+			<div class="chip__container">
+				<h3 class="chip__subtitle subtitle">Фишка c gap: <br><span>flex-basis: calc((100% -
+						кіль-сть_відступів_в_рядку * значення_одного_рядка) / кіль-сть_елементів_в_рядку);</span></h3>
+
+				<p class="chip__name-power text">1 варіан ( <span>Жені</span> )</p>
+				<div class="chip__row chip__row--1">
+					<div class="chip__column">
+						<div class="chip__item chip__item--yellow">Колонка №1</div>
+					</div>
+					<div class="chip__column">
+						<div class="chip__item chip__item--red">Колонка №2</div>
+					</div>
+					<div class="chip__column">
+						<div class="chip__item chip__item--violet">Колонка №3</div>
+					</div>
+					<div class="chip__column">
+						<div class="chip__item chip__item--green">Колонка №4</div>
+					</div>
+				</div>
+				<!-- 2 варіан -->
+				<p class="chip__name-power text">2 варіан ( <span>flex-basis: calc((100% - 45px) / 4);</span> )</p>
+				<div class="chip__row chip__row--2">
+					<div class="chip__item chip__item--yellow">Колонка №1</div>
+					<div class="chip__item chip__item--red">Колонка №2</div>
+					<div class="chip__item chip__item--violet">Колонка №3</div>
+					<div class="chip__item chip__item--green">Колонка №4</div>
+				</div>
+
+			</div>
+
+			<!-- Приклад з картками -->
+			<div class="cards__container">
+				<h3 class="cards__subtitle subtitle">Приклад з картками:</h3>
+
+				<div class="cards">
+					<div class="cards__item item-card">
+						<div class="item-card__image">
+							<img src="img/01.jpg" alt="Image">
+						</div>
+						<div class="item-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+							blanditiis quod
+							atque totam nihil ut assumenda. Placeat tempora nam eius culpa, distinctio dolore similique ut.
+							Distinctio, cum repellat. Ex, facilis.</div>
+						<a href="" class="item-card__button">Button</a>
+					</div>
+					<div class="cards__item item-card">
+						<div class="item-card__image">
+							<img src="img/02.jpg" alt="Image">
+						</div>
+						<div class="item-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+							blanditiis quod
+							atque totam nihil ut assumenda. Placeat tempora nam eius culpa, distinctio dolore similique ut.
+							Distinctio, cum repellat. Ex, facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Magnam
+							blanditiis quod
+							atque totam nihil ut assumenda. Placeat tempora nam eius culpa, distinctio dolore similique ut.
+							Distinctio, cum repellat. Ex, facilis.</div>
+						<a href="" class="item-card__button">Button</a>
+					</div>
+					<div class="cards__item item-card">
+						<div class="item-card__image">
+							<img src="img/03.jpg" alt="Image">
+						</div>
+						<div class="item-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+							blanditiis quod
+							atque totam nihil ut assumenda. tio dolore similique ut.
+							Distinctio, cum repellat. Ex, facilis. Placeat tempora nam eius culpa, distinctio dolore similique
+							ut.
+							Distinctio, cum repellat. Ex, facilis.</div>
+						<a href="" class="item-card__button">Button</a>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Приклад із посиланням -->
+			<div class="link__container">
+				<h3 class="link__subtitle subtitle">Приклад із посиланням:</h3>
+
+				<div class="link__block">
+					<a href="" class="link__item">Я посилання</a>
+				</div>
+
+			</div>
+
+			<!-- Приклад з текстом та зображенням -->
+			<div class="object__container">
+				<h3 class="object__subtitle subtitle">Приклад з текстом та зображенням:</h3>
+
+				<div class="object">
+					<div class="object__icon"></div>
+					<div class="object__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, deleniti?
+						Iste molestiae velit, quae dolorem, eaque assumenda esse recusandae harum, libero laborum facere
+						est fugiat illo! Magnam doloremque consectetur eveniet!</div>
+				</div>
+
+			</div>
+
+			<!-- Приклад з float -->
+			<div class="float__container">
+				<h3 class="float__subtitle subtitle">Приклад з <span>float</span>:</h3>
+
+				<div class="float">
+					<img class="float__image" src="img/01.jpg" alt="Image">
+				</div>
+				<div class="float__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis
+					temporibus quis. Quibusdam commodi esse pariatur facere nam tempora! Fugiat porro aliquam praesentium?
+					Distinctio tempore, ea assumenda excepturi voluptates, molestias quo praesentium architecto ratione
+					facilis, velit nesciunt nihil esse iusto.</div>
+			</div>
+
+	</div>
+
+	</main>
+	<footer class="footer">
+		<a href="#header">Up &#9757;</a>
+	</footer>
+	</div>
+</body>
+
+</html>
