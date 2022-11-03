@@ -1,0 +1,54 @@
+/* ---------- Кнопка ---------- */
+
+.button {
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 16px 40px;
+	position: relative;
+}
+
+.button span {
+	position: relative;
+	z-index: 2;
+}
+
+.button::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: opacity 0.3s ease 0s;
+	opacity: 0;
+	border-radius: 4px;
+	background: linear-gradient(55.95deg, #CA3530 0%, #C94D05 100%);
+}
+
+.button:hover::before {
+	opacity: 1;
+}
+
+/* prozora */
+.button--border {
+	background: transparent;
+	position: relative;
+	color: #FF3F3A;
+	border: 1px solid #FF3F3A;
+	padding: 15px 40px;
+	transition: all 0.3s ease 0s;
+}
+
+.button--border:hover {
+	color: #FFFFFF;
+	border: 1px solid #FF3F3A;
+	background-color: #FF3F3A;
+}
+
+/* -------------------- */
