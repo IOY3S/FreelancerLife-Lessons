@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+
+				<a href="" class="header__logo">
+					<img src="img/header/logo.svg" alt="Logo">
+				</a>
+
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="" class="menu__link">About Us</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Courses</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Events</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Blog</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="header__actions actions-header">
+					<a href="" class="actions-header__button button"><span>Get consultation </span></a>
+					<a href="" class="actions-header__auth"><span>Log in / Register</span></a>
+				</div>
+
+			</div>
+		</header>
+		<main class="page">
+
+			<!-- section-practice -->
+			<section class="section__practice practice-block">
+				<div class="practice-block__container">
+					<h2 class="practice-block__title">Practice:</h2>
+					<form class="practice-block__form form-practice" action="#">
+						<!-- ega -->
+						<div class="practice-block__line">
+							<input class="practice-block__input" autocomplete="on" required placeholder="Enter your age"
+								name="age" type="text">
+						</div>
+						<!-- e-mail -->
+						<div class="practice-block__line">
+							<input class="practice-block__input" autocomplete="on" required placeholder="Enter your e-mail"
+								name="email" type="email">
+						</div>
+						<!-- phone -->
+						<div class="practice-block__line">
+							<label class="practice-block__label practice-block__label--phone" for="phone-01">Enter your phone
+								number</label>
+							<input id="phone-01" class="practice-block__input" autocomplete="on" required placeholder="+3"
+								name="phone" type="tel">
+						</div>
+						<!-- password -->
+						<div class="practice-block__line">
+							<input class="practice-block__input" autocomplete="off" required placeholder="Enter your password"
+								name="password" type="password">
+						</div>
+						<!-- number -->
+						<div class="practice-block__line">
+							<input class="practice-block__input" autocomplete="off" placeholder="Enter your number" name="digi"
+								type="number">
+						</div>
+						<!-- color -->
+						<div class="practice-block__line">
+							<input class="practice-block__input" autocomplete="off" value="#FF3F3A" name="color" type="color">
+						</div>
+						<!-- search -->
+						<div class="practice-block__line">
+							<input class="practice-block__input" autocomplete="off" placeholder="Enter a search query"
+								name="search" type="search">
+						</div>
+						<!-- date -->
+						<div class="practice-block__line">
+							<input class="practice-block__input" autocomplete="off" name="date" type="date">
+						</div>
+						<!-- range -->
+						<div class="practice-block__line">
+							<input class="practice-block__input" autocomplete="off" name="range" type="range">
+						</div>
+						<!-- radio -->
+						<div class="practice-block__line practice-block__line--radio">
+							<div class="practice-block__item radio">
+								<input type="radio" class="radio__input" name="radio" id="radio1" value="Front-End Developer">
+								<label for="radio1" class="radio__label">red</label>
+							</div>
+							<div class="practice-block__item">
+								<input type="radio" class="radio__input" name="radio" id="radio2" value="Back-End Developer">
+								<label for="radio2" class="radio__label">yellow</label>
+							</div>
+							<div class="practice-block__item">
+								<input type="radio" class="radio__input" name="radio" id="radio3"
+									value="Full Stack Web Developer">
+								<label for="radio3" class="radio__label">dreen</label>
+							</div>
+						</div>
+						<!-- file -->
+						<div class="practice-block__line">
+							<input class="practice-block__input practice-block__input--file" name="file"
+								accept="image/png, image/jpeg " multiple type="file">
+						</div>
+						<!-- textarea -->
+						<div class="practice-block__line">
+							<textarea class="practice-block__input practice-block__input--textarea" autocomplete="off"
+								name="massege"></textarea>
+						</div>
+						<!-- select -->
+						<div class="practice-block__line">
+							<select name="colors">
+								<option value="">red</option>
+								<option selected value="">green</option>
+								<option value="">yellow</option>
+							</select>
+						</div>
+						<!-- button -->
+						<div class="practice-block__line practice-block__line--button">
+							<button class="practice-block__button button" type="button"><span>Button</span></button>
+							<button class="practice-block__button button" type="reset"><span>Reset</span></button>
+							<button class="practice-block__button button" type="submit"><span>Submit</span></button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<!-- section-questions -->
+			<section class="section__questions questions-block">
+				<div class="questions-block__container">
+					<div class="questions-block__image">
+						<img src="img/main/illustration.svg" alt="Illustration">
+					</div>
+					<div class="questions-block__content">
+						<div class="questions-block__title title-block">
+							<h4 class="title-block__sub-title">Any questions?</h4>
+							<h2 class="title-block__title">Drop us a line</h2>
+						</div>
+						<form action="#" class="questions-block__form form-block">
+							<div class="form-block__user-info info-user">
+								<div class="info-user__wrapper">
+									<div class="info-user__item">
+										<label for="first-name" class="info-user__label">First Name*</label>
+										<input type="text" class="info-user__input" required autocomplete="on" name="first-name"
+											id="first-name" placeholder="Your first name">
+									</div>
+									<div class="info-user__item">
+										<label for="last-name" class="info-user__label">Last Name*</label>
+										<input type="text" class="info-user__input" required autocomplete="on" name="last-name"
+											id="last-name" placeholder="Your last name">
+									</div>
+									<div class="info-user__item">
+										<label for="email" class="info-user__label">Email*</label>
+										<input type="email" class="info-user__input" required autocomplete="on" name="email"
+											id="email" placeholder="Your working email">
+									</div>
+									<div class="info-user__item">
+										<label for="tel" class="info-user__label">Phone</label>
+										<input type="tel" class="info-user__input" autocomplete="on" name="tel" id="tel"
+											placeholder="Your phone number">
+									</div>
+								</div>
+							</div>
+							<div class="form-block__textarea textarea-block">
+								<label for="questions-textarea" class="textarea-block__label">Message*</label>
+								<textarea class="textarea-block__textarea" autocomplete="off" name="message"
+									id="questions-textarea" placeholder="Your message"></textarea>
+							</div>
+							<div class="form-block__agree agree-block">
+								<div class="agree-block__line">
+									<input type="checkbox" class="agree-block__input" id="agree-block-checkbox">
+									<label for="agree-block-checkbox" class="agree-block__label">I agree to receive
+										communications from Createx Online School</label>
+								</div>
+								<button type="submit" class="agree-block__button button"><span>Send message</span></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
