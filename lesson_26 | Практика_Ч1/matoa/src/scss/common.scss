@@ -1,0 +1,72 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+.title {
+	font-family: "Taviraj", serif;
+	font-weight: 500;
+	font-size: 2.25rem; // 36px/16px=2.25rem или можно записать rem(36)
+	line-height: 1.11; /* 40px/36 */
+	letter-spacing: 0.02em;
+	color: $darkColor;
+	&::after {
+		content: "";
+		margin-top: em(8, 36);
+		width: em(128, 36);
+		// 128px(длина линии)/36px(размер шрифта)=3.5555555556em;
+		height: rem(1); // rem(1)=1px
+		display: block;
+		background-color: #000;
+	}
+	&--small {
+		&::after {
+			width: em(65, 36);
+			//65px(длина линии)/36px(размер шрифта)=1.8055555556em;
+		}
+	}
+	&--semibold {
+		font-weight: 600;
+	}
+}
+
+//-----------------------------------------------
+
+// popup search
+
+.seach-form {
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: em(30, 36);
+		}
+	}
+
+	// .seach-form__body
+	&__body {
+		display: flex;
+		gap: rem(20);
+		@media (max-width: em(460)) {
+			flex-direction: column;
+		}
+	}
+
+	// .seach-form__line
+	&__line {
+		flex: 1 1 auto;
+		.form__error {
+			margin-top: rem(8);
+			padding-left: rem(13);
+			font-size: rem(14);
+			text-transform: uppercase;
+			color: $orangeColor;
+		}
+	}
+
+	// .seach-form__input
+	&__input {
+		font-size: rem(18);
+		height: rem(50);
+	}
+
+	// .seach-form__button
+	&__button {
+		max-height: rem(50);
+	}
+}
