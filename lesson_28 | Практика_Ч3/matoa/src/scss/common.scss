@@ -1,0 +1,155 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+.page {
+
+	// .page__main-slider
+
+	&__main-slider {
+		@include adaptiveValue("margin-bottom", 157, 50);
+	}
+
+	// .page__discover-now
+	&__discover-now {}
+
+	// .page__monthly-deals
+	&__monthly-deals {}
+
+	// .page__recent-news
+	&__recent-news {}
+
+	// .page__insta
+	&__insta {}
+
+	// .page__clients
+	&__clients {}
+}
+
+//===title + text=====================================================================================================================================================
+
+.title {
+	font-family: "Taviraj", serif;
+	font-weight: 500;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	color: $darkColor;
+	@include adaptiveValue("font-size", 36, 28);
+
+	&::after {
+		content: "";
+		margin-top: em(8, 36);
+		width: em(128, 36);
+		// 128px(длина линии)/36px(размер шрифта)=3.5555555556em;
+		height: rem(1); // rem(1)=1px
+		display: block;
+		background-color: #000;
+	}
+
+	&--small {
+		&::after {
+			width: em(65, 36);
+			//65px(длина линии)/36px(размер шрифта)=1.8055555556em;
+		}
+	}
+
+	&--semibold {
+		font-weight: 600;
+	}
+
+	&--white {
+		font-weight: 600;
+		font-size: rem(24);
+		letter-spacing: 0.02em;
+		color: #fff;
+
+		&::after {
+			margin-top: em(10, 24);
+			background-color: #fff;
+		}
+	}
+}
+
+.text {
+	line-height: math.div(22, 16);
+	letter-spacing: 0.03em;
+}
+
+//===footer label=====================================================================================================================================================
+
+.label-footer {
+	font-family: "Taviraj", serif;
+	font-weight: 500;
+	font-size: rem(20);
+	line-height: math.div(28, 20);
+	letter-spacing: 0.02em;
+
+	&:not(:last-child) {
+		margin-bottom: rem(5);
+	}
+}
+
+//===popup search=====================================================================================================================================================
+
+.seach-form {
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: em(30, 36);
+		}
+	}
+
+	// .seach-form__body
+	&__body {
+		display: flex;
+		gap: rem(20);
+		align-items: flex-start;
+
+		@media (max-width: em(460)) {
+			flex-direction: column;
+		}
+	}
+
+	// .seach-form__line
+	&__line {
+		flex: 1 1 auto;
+
+		.form__error {
+			margin-top: rem(8);
+			padding-left: rem(13);
+			font-size: rem(14);
+			text-transform: uppercase;
+			color: $orangeColor;
+		}
+	}
+
+	// .seach-form__input
+	&__input {
+		font-size: rem(18);
+		height: rem(50);
+	}
+
+	// .seach-form__button
+	&__button {
+		// max-height: rem(50);
+	}
+}
+
+//===footer social=====================================================================================================================================================
+
+.social {
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(25);
+	font-size: rem(32);
+
+	// .social__item
+	&__item {
+		transition: opacity 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+//========================================================================================================================================================
